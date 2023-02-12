@@ -11,8 +11,7 @@ function solve(matrix) {
       }
     }
   }
-  console.log(sumMainDiagona);
-  console.log(sumSecndaryDiagona);
+  console.log(sumMainDiagona + ' ' + sumSecndaryDiagona);
 }
 solve([
   [20, 40],
