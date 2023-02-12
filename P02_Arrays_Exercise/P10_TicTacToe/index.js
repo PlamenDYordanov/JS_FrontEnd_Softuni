@@ -23,7 +23,7 @@ function solve(arr) {
       freeSpace --;
     }
     // TO - DO
-    // check if palyer win the game after fifth move
+    // check if palyer win the game after fifth move. The earliest win
     if (move >= 4) {
       let win = 0;
       // PrimaryDiagonal
