@@ -8,7 +8,6 @@ function solve(arr) {
   let freeSpace = 9;
   let currentPlayer = "X";
   for (let move = 0; move < arr.length; move++) {
- 
     let splitInput = arr[move].split(" ").map((element) => Number(element));
     let currentRow = splitInput[0];
     let currentCol = splitInput[1];
