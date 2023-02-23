@@ -1,8 +1,7 @@
-function solve(firstNum, secondNum) {
+function solve() {
     let result = 0;
-for(let i = firstNum; i >= secondNum; i--){
+for(let i = 1; i <= 5; i++){
     console.log(i);
 }
 }
-solve(6, 2);
-solve(4, 1);
+solve();
