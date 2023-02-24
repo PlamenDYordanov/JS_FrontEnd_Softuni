@@ -12,8 +12,8 @@ MUTATORS
 Splice():
 const myArr = [10, 20, 30, 40, 50];
 const splice = myArr.splice(3, 2);
-splice = [40, 50];
 myArr = [10, 20, 30];
+splice = [40, 50];
 const splice = myArr.splice(3, 0, 23); we also can add!
 myArr = [10, 20, 30, 23, 40, 50];~
 
