@@ -1,4 +1,5 @@
 function solve(array, steps) {
+    
     for(let i = 0; i < steps; i++) {
         let firstElement = array.shift();
         array.push(firstElement);
