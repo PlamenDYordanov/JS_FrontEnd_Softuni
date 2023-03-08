@@ -11,8 +11,8 @@ spread syntax -> '...' makes shallow copy;
 MUTATORS
 Splice():
 const myArr = [10, 20, 30, 40, 50];
-const splice = myArr.splice(3, 2);
-myArr = [10, 20, 30];
+const splice = myArr.splice(3, 1);
+myArr = [10, 20, 30, 50];
 splice = [40, 50];
 const splice = myArr.splice(3, 0, 23); we also can add!
 myArr = [10, 20, 30, 23, 40, 50];~
@@ -42,11 +42,11 @@ myArr.sort((a,b) => a.localeCompare(b));
 myArr = ['annie', 'Charlie', 'jonh'];
 ------------------------------
 ACCESSORS
-join():
+Join():
 .toString() all elements
 .join(', '->(separator))
 
-concat():
+Concat():
 const myArr = [1, 5, 2];
 const arr = [10, 20, 50];
 const result = myArr.concat(arr); same like this -> const result = [...Myarr, ...arr](its better solution);
