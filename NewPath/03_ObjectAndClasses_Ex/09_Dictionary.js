@@ -13,9 +13,7 @@ function solve(array) {
         console.log(`Term: ${term} => Definition: ${dict[term]}`);
     }
   }
-// for (let value of objArr) {
-//     console.log(`Terms ${value.key()} => Definition: ${objArr[value]}`);
-// }
+
 
 
 solve([
