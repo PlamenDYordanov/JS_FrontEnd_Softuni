@@ -27,3 +27,18 @@
     <script src="./app.js"></script>
 
 </html>
+
+for (let input of inputs) {
+    input.addEventListener(hover);
+    // input.addEventListener("blur", unHover);
+  }
+  function hover(e) {
+    let item = e.currentTarget.parentElement;
+    item.style.background = "gray";
+    // item.parentElement.setAttribute("class", "focused");
+  }
+//   function unHover(e) {
+//     let item = e.currentTarget.parentElement;
+//     item.style.background = "white";
+//     item.parentElement.removeAttribute("class");
+//   }
