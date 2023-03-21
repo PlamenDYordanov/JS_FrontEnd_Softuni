@@ -5,7 +5,7 @@ function validate() {
 
   function checkEmail(e) {
     let target = e.currentTarget;
-    if (!target.value.match(/[a-z]+@[a-z]+.[a-z]+/)) {
+    if (!target.value.match(/[a-z]+[a-z]+.[a-z]+/)) {
       target.classList.add("error");
     } else {
       target.classList.remove("error");
