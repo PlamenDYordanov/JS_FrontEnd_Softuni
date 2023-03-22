@@ -59,3 +59,58 @@ function solve() {
     bestWorkersOutput.textContent = outputBestWorkers.join(' ');
   }
 }
+
+//second solution
+// function solve() {
+//   document.querySelector('#btnSend').addEventListener('click', onClick);
+
+//   const inputTextarea = document.querySelector("#inputs > textarea")
+//   const outputP = document.querySelectorAll("#outputs p")
+
+
+//   function onClick () {
+//      let restaurantsInfo = {};
+
+//      for (let restaurant of JSON.parse(inputTextarea.value)) {
+//         let [restaurantName, workersList] = restaurant.split(" - ");
+//         workersList = workersList.split(", ");
+
+//         if (!(restaurantName in restaurantsInfo)) {
+//            restaurantsInfo[restaurantName] = {}
+//         }
+
+//         for (let worker of workersList) {
+//            let [workerName, salary] = worker.split(" ");
+//            restaurantsInfo[restaurantName][workerName] = parseInt(salary);
+//         }
+
+//      }
+
+//      let bestRestaurant = ''
+//      let bestAverageSalary = 0
+//      let bestMaxSalary = 0
+
+//      for (let[ restaurant, workersInfo] of Object.entries(restaurantsInfo)) {
+//         let salariesList = Object.values(workersInfo);
+//         let averageSalary = salariesList.reduce((a, b) => a + b, 0) / salariesList.length;
+
+//         if (averageSalary > bestAverageSalary) {
+//            bestAverageSalary = averageSalary;
+//            bestRestaurant = restaurant;
+//            bestMaxSalary = salariesList.reduce((a, b) => Math.max(a, b));
+//         }
+//      }
+
+//      let result = `Name: ${bestRestaurant} Average Salary: ${bestAverageSalary.toFixed(2)} Best Salary: ${bestMaxSalary.toFixed(2)}`
+//      outputP[0].textContent = result
+
+//      let workersSorted = Object.entries(restaurantsInfo[bestRestaurant]).sort((a, b) => b[1] - a[1]);
+//      result = workersSorted.reduce((result, worker) => result + `Name: ${worker[0]} With Salary: ${worker[1]} `, '');
+//      outputP[1].textContent = result
+
+//      inputTextarea.value = ''
+
+
+//   }
+// }
+
