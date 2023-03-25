@@ -6,6 +6,7 @@ async function loadCommits() {
     const usernameVal = username.value;
     const repoVal = repo.value;
     try{
+        debugger
         const allCommitsResult = await fetch(`${BASE_URL}${usernameVal}/${repoVal}/commits` )
         const data = await allCommitsResult.json();
         data
