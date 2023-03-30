@@ -37,8 +37,9 @@ function attachEvents() {
       const editBtn = createElement("button", "Edit", actionContent);
       const deleteBtn = createElement("button", "Delete", actionContent);
       deleteBtn.id = element[0];
-      deleteBtn.addEventListener("click", deleteRowHandler);
       editBtn.id = element[0];
+      
+      deleteBtn.addEventListener("click", deleteRowHandler);
       editBtn.addEventListener("click", editCurrentBook);
     });
   }
