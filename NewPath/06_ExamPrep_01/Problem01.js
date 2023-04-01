@@ -15,8 +15,6 @@ for (let inputLine of input) {
     if(inputLine === 'Stop') {
         break;
     }
-    // let [command, piece, composer, key] = inputLine.split('|');
-    // commandParser(command, piece, composer, key);
     let commandTokens = inputLine.split('|');
     let command = commandTokens[0];
     commandParser[command](...commandTokens.slice(1));
