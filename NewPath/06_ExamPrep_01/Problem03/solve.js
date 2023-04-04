@@ -58,6 +58,7 @@ if(event){
     .then(() => loadAllTasksHandler())
     .catch((err) => console.log(err))
   }
+  //From here
   function editButtonHandler(el) {
     let liParent =el.currentTarget.parentNode;
     let [span, remove, edit] = Array.from(el.currentTarget.parentNode.children)
